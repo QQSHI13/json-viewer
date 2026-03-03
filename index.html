@@ -213,7 +213,7 @@
             try {
                 parsedData = JSON.parse(text);
                 hideError();
-                renderTree(parsedData);
+                tree.innerHTML = renderTree(parsedData);
                 updateStats(text.length, countNodes(parsedData), getMaxDepth(parsedData));
             } catch (e) {
                 showError(e.message);
