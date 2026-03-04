@@ -144,6 +144,23 @@
             .container { flex-direction: column; }
             .panel { min-height: 300px; }
         }
+        footer {
+            background: var(--surface);
+            border-top: 1px solid var(--border);
+            padding: 0.75rem 1rem;
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+        footer a {
+            color: var(--accent);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s;
+        }
+        footer a:hover {
+            border-bottom-color: var(--accent);
+        }
     </style>
 </head>
 <body>
@@ -387,5 +404,6 @@
         }, null, 2);
         parseJSON();
     </script>
+    <footer>Built with ❤️ by QQ & <a href="https://qqshi13.github.io/nova/" target="_blank">Nova ☄️</a></footer>
 </body>
 </html>
